@@ -1,0 +1,41 @@
+\hypertarget{_debug_port_8h}{}\section{Debug\+Port.\+h File Reference}
+\label{_debug_port_8h}\index{Debug\+Port.\+h@{Debug\+Port.\+h}}
+
+
+调试模块  
+
+
+{\ttfamily \#include \char`\"{}stm8s.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stdbool.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}transform.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___debug_port___exported___functions_gac8b6f2276832297b953b0df9c9b9c94f}{Debug\+Port\+\_\+\+Init} (void)
+\begin{DoxyCompactList}\small\item\em 调试串口初始化. \end{DoxyCompactList}\item 
+void \hyperlink{group___debug_port___exported___functions_gaf512b658a5c59c2cf06838a46fb566a6}{Debug\+Port\+\_\+\+Open} (void)
+\begin{DoxyCompactList}\small\item\em 打开调试串口. \end{DoxyCompactList}\item 
+void \hyperlink{group___debug_port___exported___functions_ga91e73a4824db7761c9fa3eb56307a349}{Debug\+Port\+\_\+\+Close} (void)
+\begin{DoxyCompactList}\small\item\em 关闭调试串口. \end{DoxyCompactList}\item 
+bool \hyperlink{group___debug_port___exported___functions_ga47bfe409c836aac8085b37893f18a76e}{Debug\+Port\+\_\+\+Write} (const char $\ast$const buf, uint8\+\_\+t buf\+Len)
+\begin{DoxyCompactList}\small\item\em 调试串口字符数组输出. \end{DoxyCompactList}\item 
+bool \hyperlink{group___debug_port___exported___functions_ga396d54570188cefbe3afdc240b7e9708}{Debug\+Port\+\_\+\+Write\+String} (const char $\ast$const str)
+\begin{DoxyCompactList}\small\item\em 调试串口字符串输出. \end{DoxyCompactList}\item 
+bool {\bfseries Debug\+Port\+\_\+\+Write\+Line} (const char $\ast$const str)
+\item 
+void \hyperlink{group___debug_port___exported___functions_ga8c0e9f2cebd2a8d98f836c9cf85d6d18}{Debug\+Port\+\_\+\+Handler} (void)
+\begin{DoxyCompactList}\small\item\em 调试处理. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+调试模块 
+
+\begin{DoxyAuthor}{Author}
+A\+W\+C\+\_\+\+E\+R\+D\+\_\+\+T\+E\+A\+M3 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2018-\/1-\/12 
+\end{DoxyDate}

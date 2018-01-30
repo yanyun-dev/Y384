@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Project>
+  <Desktop>
+    <Static>
+      <Debug-Log>
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1307</ColumnWidth1></Debug-Log>
+      <Build>
+        <ColumnWidth0>20</ColumnWidth0>
+        <ColumnWidth1>980</ColumnWidth1>
+        <ColumnWidth2>261</ColumnWidth2>
+        <ColumnWidth3>65</ColumnWidth3>
+      </Build>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>179</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Disassembly>
+        
+        
+        
+      <MixedMode>1</MixedMode><CodeCovShow>1</CodeCovShow><InstrProfShow>1</InstrProfShow></Disassembly>
+      <Watch>
+        <Format>
+          <struct_types/>
+          <watch_formats/>
+        </Format>
+      </Watch>
+      <Locals>
+        
+        
+        
+        
+      <Column0>100</Column0><Column1>100</Column1><Column2>100</Column2><Column3>100</Column3></Locals>
+    <Register/><TerminalIO><PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows><InputSource>1</InputSource><InputMode>10</InputMode><Filename>$PROJ_DIR$\TermIOInput.txt</Filename><InputEcho>1</InputEcho><ShowReset>0</ShowReset></TerminalIO><StaticWatch><Column0>58</Column0><Column1>193</Column1><Column2>100</Column2><Column3>100</Column3></StaticWatch><Statics><Column0>100</Column0><Column1>100</Column1><Column2>100</Column2><Column3>100</Column3></Statics><Find-in-Files><ColumnWidth0>470</ColumnWidth0><ColumnWidth1>67</ColumnWidth1><ColumnWidth2>806</ColumnWidth2></Find-in-Files></Static>
+    <Windows>
+      
+      
+      
+      
+    <Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-15149-24371</Identity>
+            <TabName>Debug Log</TabName>
+            <Factory>Debug-Log</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-14626-24381</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        <Tab><Identity>TabID-12001-29752</Identity><TabName>Find in Files</TabName><Factory>Find-in-Files</Factory><Session/></Tab></Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd6>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-25898-24374</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>Y384</ExpandedNode><ExpandedNode>Y384/App</ExpandedNode><ExpandedNode>Y384/DebugPort</ExpandedNode><ExpandedNode>Y384/Library</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd6><Wnd7>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-3878-24378</Identity>
+            <TabName>Disassembly</TabName>
+            <Factory>Disassembly</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd7><Wnd8>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-24497-28904</Identity>
+            <TabName>Locals</TabName>
+            <Factory>Locals</Factory>
+            <Session>
+              
+              
+              
+              
+            <Column0>100</Column0><Column1>100</Column1><Column2>100</Column2><Column3>100</Column3></Session>
+          </Tab>
+        <Tab><Identity>TabID-19848-27143</Identity><TabName>Live Watch</TabName><Factory>StaticWatch</Factory><Session><Expressions><Expression><Expression>Beep_Option_status</Expression></Expression></Expressions><TabId>0</TabId><Column0>58</Column0><Column1>193</Column1><Column2>100</Column2><Column3>100</Column3></Session></Tab><Tab><Identity>TabID-9332-4397</Identity><TabName>Statics</TabName><Factory>Statics</Factory><Session><SelectedVars/><Column0>100</Column0><Column1>100</Column1><Column2>100</Column2><Column3>100</Column3><ShowAllVars>1</ShowAllVars></Session></Tab></Tabs>
+        
+      <SelectedTab>2</SelectedTab></Wnd8><Wnd9><Tabs><Tab><Identity>TabID-4102-27028</Identity><TabName>Register</TabName><Factory>Register</Factory><Session><REG1>0</REG1><REG2>198</REG2><Group>20</Group><States>9</States><State0>TIM1_CCR1H</State0><State1>TIM1_CCR1L</State1><State2>TIM1_CR1</State2><State3>TIM1_SR1</State3><State4>TIM2_CCR3H</State4><State5>TIM2_SR1</State5><State6>UART1_CR1</State6><State7>UART1_CR2</State7><State8>UART1_SR</State8></Session></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd9></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>D:\Program Files (x86)\IAR Systems\Embedded Workbench 6.0\stm8\doc\infocenter\index.ENU.html</Filename></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\main.c</Filename><XPos>0</XPos><YPos>17</YPos><SelStart>715</SelStart><SelEnd>715</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\transform.c</Filename><XPos>0</XPos><YPos>42</YPos><SelStart>2671</SelStart><SelEnd>2671</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\sample.c</Filename><XPos>0</XPos><YPos>142</YPos><SelStart>2138</SelStart><SelEnd>2138</SelEnd></Tab><ActiveTab>3</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Libraries\STM8S_StdPeriph_Driver\src\stm8s_tim1.c</Filename><XPos>0</XPos><YPos>552</YPos><SelStart>24005</SelStart><SelEnd>24005</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\PWM_out.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>181</SelStart><SelEnd>197</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-011a0b48><key>iaridepm.enu1</key></Toolbar-011a0b48></Sizes></Row0><Row1><Sizes><Toolbar-0f7e1bc8><key>debuggergui.enu1</key></Toolbar-0f7e1bc8></Sizes></Row1></Top><Left><Row0><Sizes><Wnd6><Rect><Top>-2</Top><Left>-2</Left><Bottom>415</Bottom><Right>270</Right><x>-2</x><y>-2</y><xscreen>63</xscreen><yscreen>204</yscreen><sizeHorzCX>46120</sizeHorzCX><sizeHorzCY>297376</sizeHorzCY><sizeVertCX>199122</sizeVertCX><sizeVertCY>607872</sizeVertCY></Rect></Wnd6></Sizes></Row0></Left><Right><Row0><Sizes><Wnd7><Rect><Top>-2</Top><Left>-2</Left><Bottom>415</Bottom><Right>189</Right><x>-2</x><y>-2</y><xscreen>63</xscreen><yscreen>204</yscreen><sizeHorzCX>46120</sizeHorzCX><sizeHorzCY>297376</sizeHorzCY><sizeVertCX>139824</sizeVertCX><sizeVertCY>607872</sizeVertCY></Rect></Wnd7></Sizes></Row0><Row1><Sizes><Wnd8><Rect><Top>-2</Top><Left>187</Left><Bottom>415</Bottom><Right>434</Right><x>187</x><y>-2</y><xscreen>63</xscreen><yscreen>204</yscreen><sizeHorzCX>46120</sizeHorzCX><sizeHorzCY>297376</sizeHorzCY><sizeVertCX>180820</sizeVertCX><sizeVertCY>607872</sizeVertCY></Rect></Wnd8></Sizes></Row1><Row2><Sizes><Wnd9><Rect><Top>-2</Top><Left>432</Left><Bottom>415</Bottom><Right>644</Right><x>432</x><y>-2</y><xscreen>63</xscreen><yscreen>204</yscreen><sizeHorzCX>46120</sizeHorzCX><sizeHorzCY>297376</sizeHorzCY><sizeVertCX>155198</sizeVertCX><sizeVertCY>607872</sizeVertCY></Rect></Wnd9></Sizes></Row2></Right><Bottom><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>202</Bottom><Right>1368</Right><x>-2</x><y>-2</y><xscreen>1370</xscreen><yscreen>204</yscreen><sizeHorzCX>1002928</sizeHorzCX><sizeHorzCY>297376</sizeHorzCY><sizeVertCX>46120</sizeVertCX><sizeVertCY>297376</sizeVertCY></Rect></Wnd2></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Project>
+
+

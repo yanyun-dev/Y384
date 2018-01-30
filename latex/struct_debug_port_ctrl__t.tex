@@ -1,0 +1,101 @@
+\hypertarget{struct_debug_port_ctrl__t}{}\section{Debug\+Port\+Ctrl\+\_\+t Struct Reference}
+\label{struct_debug_port_ctrl__t}\index{Debug\+Port\+Ctrl\+\_\+t@{Debug\+Port\+Ctrl\+\_\+t}}
+
+
+调试模块控制结构体  
+
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{struct_debug_port_ctrl__t_ad20d3bee07bb25efffc16b460a284b93}{tx\+Buf\+Curr\+Out\+Pos}
+\item 
+\+\_\+\+\_\+\+IO uint8\+\_\+t \hyperlink{struct_debug_port_ctrl__t_a49b6a8213aaa49f338a4d0f1e36417d1}{tx\+Buf\+Curr\+In\+Pos}
+\item 
+\+\_\+\+\_\+\+IO uint8\+\_\+t \hyperlink{struct_debug_port_ctrl__t_a05dfbd0dfe19afa8f8875fd8851c477d}{rx\+Buf\+Curr\+Pos}\+: 4
+\item 
+uint8\+\_\+t \hyperlink{struct_debug_port_ctrl__t_a8195a386ae0b033e3c3349e52e69190d}{rxd\+Frame\+Len}\+: 4
+\item 
+\+\_\+\+\_\+\+IO uint8\+\_\+t \hyperlink{struct_debug_port_ctrl__t_ad978075310623395cb11c19d365ac1c9}{rxd\+New\+Packet}\+: 1
+\item 
+\+\_\+\+\_\+\+IO uint8\+\_\+t \hyperlink{struct_debug_port_ctrl__t_ae91740bfa0218108dce1c4f30bc2a177}{transmitting\+Data}\+:1
+\item 
+uint8\+\_\+t \hyperlink{struct_debug_port_ctrl__t_acf4f6f0a4c990e764fe3d6a90eb0c344}{printing\+Help}\+: 1
+\item 
+\+\_\+\+\_\+\+IO uint8\+\_\+t \hyperlink{struct_debug_port_ctrl__t_a89dc9c8df46977ee0bde19a991de59b7}{tx\+Buf} \mbox{[}\hyperlink{group___debug_port_ga9bca70c95e91f7f2057e7295dea5122e}{D\+E\+B\+U\+G\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+X\+\_\+\+T\+X\+\_\+\+B\+Y\+T\+ES}\mbox{]}
+\item 
+\+\_\+\+\_\+\+IO uint8\+\_\+t \hyperlink{struct_debug_port_ctrl__t_a55232fc2a43e003ae309b908d6765626}{rx\+Buf} \mbox{[}\hyperlink{group___debug_port_ga43802773d24a869de1adfb0d0d869332}{D\+E\+B\+U\+G\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+X\+\_\+\+R\+X\+\_\+\+B\+Y\+T\+ES}\mbox{]}
+\item 
+int16\+\_\+t \hyperlink{struct_debug_port_ctrl__t_a660355da721fa1c7aa7294e39b3b3bfc}{curr\+Timeout\+Val\+\_\+ms}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+调试模块控制结构体 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_debug_port_ctrl__t_a660355da721fa1c7aa7294e39b3b3bfc}\label{struct_debug_port_ctrl__t_a660355da721fa1c7aa7294e39b3b3bfc}} 
+\index{Debug\+Port\+Ctrl\+\_\+t@{Debug\+Port\+Ctrl\+\_\+t}!curr\+Timeout\+Val\+\_\+ms@{curr\+Timeout\+Val\+\_\+ms}}
+\index{curr\+Timeout\+Val\+\_\+ms@{curr\+Timeout\+Val\+\_\+ms}!Debug\+Port\+Ctrl\+\_\+t@{Debug\+Port\+Ctrl\+\_\+t}}
+\subsubsection{\texorpdfstring{curr\+Timeout\+Val\+\_\+ms}{currTimeoutVal\_ms}}
+{\footnotesize\ttfamily int16\+\_\+t Debug\+Port\+Ctrl\+\_\+t\+::curr\+Timeout\+Val\+\_\+ms}
+
+超时计数 \mbox{\Hypertarget{struct_debug_port_ctrl__t_acf4f6f0a4c990e764fe3d6a90eb0c344}\label{struct_debug_port_ctrl__t_acf4f6f0a4c990e764fe3d6a90eb0c344}} 
+\index{Debug\+Port\+Ctrl\+\_\+t@{Debug\+Port\+Ctrl\+\_\+t}!printing\+Help@{printing\+Help}}
+\index{printing\+Help@{printing\+Help}!Debug\+Port\+Ctrl\+\_\+t@{Debug\+Port\+Ctrl\+\_\+t}}
+\subsubsection{\texorpdfstring{printing\+Help}{printingHelp}}
+{\footnotesize\ttfamily uint8\+\_\+t Debug\+Port\+Ctrl\+\_\+t\+::printing\+Help}
+
+帮助控制位 \mbox{\Hypertarget{struct_debug_port_ctrl__t_a55232fc2a43e003ae309b908d6765626}\label{struct_debug_port_ctrl__t_a55232fc2a43e003ae309b908d6765626}} 
+\index{Debug\+Port\+Ctrl\+\_\+t@{Debug\+Port\+Ctrl\+\_\+t}!rx\+Buf@{rx\+Buf}}
+\index{rx\+Buf@{rx\+Buf}!Debug\+Port\+Ctrl\+\_\+t@{Debug\+Port\+Ctrl\+\_\+t}}
+\subsubsection{\texorpdfstring{rx\+Buf}{rxBuf}}
+{\footnotesize\ttfamily \+\_\+\+\_\+\+IO uint8\+\_\+t Debug\+Port\+Ctrl\+\_\+t\+::rx\+Buf\mbox{[}\hyperlink{group___debug_port_ga43802773d24a869de1adfb0d0d869332}{D\+E\+B\+U\+G\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+X\+\_\+\+R\+X\+\_\+\+B\+Y\+T\+ES}\mbox{]}}
+
+接收缓冲区 \mbox{\Hypertarget{struct_debug_port_ctrl__t_a05dfbd0dfe19afa8f8875fd8851c477d}\label{struct_debug_port_ctrl__t_a05dfbd0dfe19afa8f8875fd8851c477d}} 
+\index{Debug\+Port\+Ctrl\+\_\+t@{Debug\+Port\+Ctrl\+\_\+t}!rx\+Buf\+Curr\+Pos@{rx\+Buf\+Curr\+Pos}}
+\index{rx\+Buf\+Curr\+Pos@{rx\+Buf\+Curr\+Pos}!Debug\+Port\+Ctrl\+\_\+t@{Debug\+Port\+Ctrl\+\_\+t}}
+\subsubsection{\texorpdfstring{rx\+Buf\+Curr\+Pos}{rxBufCurrPos}}
+{\footnotesize\ttfamily \+\_\+\+\_\+\+IO uint8\+\_\+t Debug\+Port\+Ctrl\+\_\+t\+::rx\+Buf\+Curr\+Pos}
+
+接收缓冲区输入位置 \mbox{\Hypertarget{struct_debug_port_ctrl__t_a8195a386ae0b033e3c3349e52e69190d}\label{struct_debug_port_ctrl__t_a8195a386ae0b033e3c3349e52e69190d}} 
+\index{Debug\+Port\+Ctrl\+\_\+t@{Debug\+Port\+Ctrl\+\_\+t}!rxd\+Frame\+Len@{rxd\+Frame\+Len}}
+\index{rxd\+Frame\+Len@{rxd\+Frame\+Len}!Debug\+Port\+Ctrl\+\_\+t@{Debug\+Port\+Ctrl\+\_\+t}}
+\subsubsection{\texorpdfstring{rxd\+Frame\+Len}{rxdFrameLen}}
+{\footnotesize\ttfamily uint8\+\_\+t Debug\+Port\+Ctrl\+\_\+t\+::rxd\+Frame\+Len}
+
+帧长度 \mbox{\Hypertarget{struct_debug_port_ctrl__t_ad978075310623395cb11c19d365ac1c9}\label{struct_debug_port_ctrl__t_ad978075310623395cb11c19d365ac1c9}} 
+\index{Debug\+Port\+Ctrl\+\_\+t@{Debug\+Port\+Ctrl\+\_\+t}!rxd\+New\+Packet@{rxd\+New\+Packet}}
+\index{rxd\+New\+Packet@{rxd\+New\+Packet}!Debug\+Port\+Ctrl\+\_\+t@{Debug\+Port\+Ctrl\+\_\+t}}
+\subsubsection{\texorpdfstring{rxd\+New\+Packet}{rxdNewPacket}}
+{\footnotesize\ttfamily \+\_\+\+\_\+\+IO uint8\+\_\+t Debug\+Port\+Ctrl\+\_\+t\+::rxd\+New\+Packet}
+
+接收新包标志 \mbox{\Hypertarget{struct_debug_port_ctrl__t_ae91740bfa0218108dce1c4f30bc2a177}\label{struct_debug_port_ctrl__t_ae91740bfa0218108dce1c4f30bc2a177}} 
+\index{Debug\+Port\+Ctrl\+\_\+t@{Debug\+Port\+Ctrl\+\_\+t}!transmitting\+Data@{transmitting\+Data}}
+\index{transmitting\+Data@{transmitting\+Data}!Debug\+Port\+Ctrl\+\_\+t@{Debug\+Port\+Ctrl\+\_\+t}}
+\subsubsection{\texorpdfstring{transmitting\+Data}{transmittingData}}
+{\footnotesize\ttfamily \+\_\+\+\_\+\+IO uint8\+\_\+t Debug\+Port\+Ctrl\+\_\+t\+::transmitting\+Data}
+
+发送数据标志 \mbox{\Hypertarget{struct_debug_port_ctrl__t_a89dc9c8df46977ee0bde19a991de59b7}\label{struct_debug_port_ctrl__t_a89dc9c8df46977ee0bde19a991de59b7}} 
+\index{Debug\+Port\+Ctrl\+\_\+t@{Debug\+Port\+Ctrl\+\_\+t}!tx\+Buf@{tx\+Buf}}
+\index{tx\+Buf@{tx\+Buf}!Debug\+Port\+Ctrl\+\_\+t@{Debug\+Port\+Ctrl\+\_\+t}}
+\subsubsection{\texorpdfstring{tx\+Buf}{txBuf}}
+{\footnotesize\ttfamily \+\_\+\+\_\+\+IO uint8\+\_\+t Debug\+Port\+Ctrl\+\_\+t\+::tx\+Buf\mbox{[}\hyperlink{group___debug_port_ga9bca70c95e91f7f2057e7295dea5122e}{D\+E\+B\+U\+G\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+X\+\_\+\+T\+X\+\_\+\+B\+Y\+T\+ES}\mbox{]}}
+
+发送缓冲区 \mbox{\Hypertarget{struct_debug_port_ctrl__t_a49b6a8213aaa49f338a4d0f1e36417d1}\label{struct_debug_port_ctrl__t_a49b6a8213aaa49f338a4d0f1e36417d1}} 
+\index{Debug\+Port\+Ctrl\+\_\+t@{Debug\+Port\+Ctrl\+\_\+t}!tx\+Buf\+Curr\+In\+Pos@{tx\+Buf\+Curr\+In\+Pos}}
+\index{tx\+Buf\+Curr\+In\+Pos@{tx\+Buf\+Curr\+In\+Pos}!Debug\+Port\+Ctrl\+\_\+t@{Debug\+Port\+Ctrl\+\_\+t}}
+\subsubsection{\texorpdfstring{tx\+Buf\+Curr\+In\+Pos}{txBufCurrInPos}}
+{\footnotesize\ttfamily \+\_\+\+\_\+\+IO uint8\+\_\+t Debug\+Port\+Ctrl\+\_\+t\+::tx\+Buf\+Curr\+In\+Pos}
+
+发送缓冲区输入位置 \mbox{\Hypertarget{struct_debug_port_ctrl__t_ad20d3bee07bb25efffc16b460a284b93}\label{struct_debug_port_ctrl__t_ad20d3bee07bb25efffc16b460a284b93}} 
+\index{Debug\+Port\+Ctrl\+\_\+t@{Debug\+Port\+Ctrl\+\_\+t}!tx\+Buf\+Curr\+Out\+Pos@{tx\+Buf\+Curr\+Out\+Pos}}
+\index{tx\+Buf\+Curr\+Out\+Pos@{tx\+Buf\+Curr\+Out\+Pos}!Debug\+Port\+Ctrl\+\_\+t@{Debug\+Port\+Ctrl\+\_\+t}}
+\subsubsection{\texorpdfstring{tx\+Buf\+Curr\+Out\+Pos}{txBufCurrOutPos}}
+{\footnotesize\ttfamily uint8\+\_\+t Debug\+Port\+Ctrl\+\_\+t\+::tx\+Buf\+Curr\+Out\+Pos}
+
+发送缓冲区输出位置 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_debug_port_8c}{Debug\+Port.\+c}\end{DoxyCompactItemize}

@@ -1,0 +1,295 @@
+\hypertarget{group___debug_port}{}\section{Debug\+Port}
+\label{group___debug_port}\index{Debug\+Port@{Debug\+Port}}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___debug_port___privated___functions}{Debug\+Port\+\_\+\+Privated\+\_\+\+Functions}
+\item 
+\hyperlink{group___debug_port___exported___functions}{Debug\+Port\+\_\+\+Exported\+\_\+\+Functions}
+\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_debug_port_ctrl__t}{Debug\+Port\+Ctrl\+\_\+t}
+\begin{DoxyCompactList}\small\item\em 调试模块控制结构体 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_command_item__t}{Command\+Item\+\_\+t}
+\begin{DoxyCompactList}\small\item\em 输入命令结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___debug_port_ga9bca70c95e91f7f2057e7295dea5122e}{D\+E\+B\+U\+G\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+X\+\_\+\+T\+X\+\_\+\+B\+Y\+T\+ES}~40
+\begin{DoxyCompactList}\small\item\em 输入输出缓冲区大小 \end{DoxyCompactList}\item 
+\#define \hyperlink{group___debug_port_ga43802773d24a869de1adfb0d0d869332}{D\+E\+B\+U\+G\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+X\+\_\+\+R\+X\+\_\+\+B\+Y\+T\+ES}~10
+\item 
+\#define \hyperlink{group___debug_port_gacb83a29ae4e998016f337adf936d70cd}{D\+E\+B\+U\+G\+\_\+\+P\+O\+R\+T\+\_\+\+E\+O\+L\+\_\+\+D\+E\+L\+I\+M\+I\+T\+ER}~0x0D
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group___debug_port_ga7f03a47f9f4d1eb8db5ef233302a9cd8}\label{group___debug_port_ga7f03a47f9f4d1eb8db5ef233302a9cd8}} 
+typedef void($\ast$ {\bfseries cmd\+Func}) (void)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___debug_port_ga2afce0a47a93eee73a314d53e4890153}{Command} \{ \newline
+\hyperlink{group___debug_port_gga2afce0a47a93eee73a314d53e4890153ac288c8dd78228e1f345e690a725505fb}{G\+E\+T\+\_\+\+C\+U\+R\+\_\+\+I\+N\+P\+U\+T\+\_\+\+P\+W\+M\+\_\+\+R\+A\+TE} = \textquotesingle{}a\textquotesingle{}, 
+\hyperlink{group___debug_port_gga2afce0a47a93eee73a314d53e4890153a90e7399e0580085ee0677cac9cf3a180}{S\+E\+T\+\_\+\+C\+U\+R\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+P\+W\+M\+\_\+\+R\+A\+TE} = \textquotesingle{}b\textquotesingle{}, 
+\hyperlink{group___debug_port_gga2afce0a47a93eee73a314d53e4890153a79bba8ed9780c39e1e5f6ff8baaeb269}{D\+I\+S\+P\+L\+A\+Y\+\_\+\+T\+A\+B\+L\+E\+\_\+\+I\+T\+E\+M\+\_\+\+V\+A\+L\+UE} = \textquotesingle{}c\textquotesingle{}, 
+\hyperlink{group___debug_port_gga2afce0a47a93eee73a314d53e4890153a4f9beafec3b4a02ec855bde54050ad27}{T\+A\+B\+L\+E\+\_\+\+D\+I\+S\+P\+L\+AY} = \textquotesingle{}d\textquotesingle{}, 
+\newline
+\hyperlink{group___debug_port_gga2afce0a47a93eee73a314d53e4890153afd783e97d92382805c87eac47b6f208a}{U\+N\+K\+N\+O\+W\+N\+\_\+\+C\+O\+M\+M\+A\+ND}
+ \}\begin{DoxyCompactList}\small\item\em 输入命令 \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___debug_port_gac8b6f2276832297b953b0df9c9b9c94f}{Debug\+Port\+\_\+\+Init} (void)
+\begin{DoxyCompactList}\small\item\em 调试串口初始化. \end{DoxyCompactList}\item 
+void \hyperlink{group___debug_port_gaf512b658a5c59c2cf06838a46fb566a6}{Debug\+Port\+\_\+\+Open} (void)
+\begin{DoxyCompactList}\small\item\em 打开调试串口. \end{DoxyCompactList}\item 
+void \hyperlink{group___debug_port_ga91e73a4824db7761c9fa3eb56307a349}{Debug\+Port\+\_\+\+Close} (void)
+\begin{DoxyCompactList}\small\item\em 关闭调试串口. \end{DoxyCompactList}\item 
+bool \hyperlink{group___debug_port_ga47bfe409c836aac8085b37893f18a76e}{Debug\+Port\+\_\+\+Write} (const char $\ast$const buf, uint8\+\_\+t buf\+Len)
+\begin{DoxyCompactList}\small\item\em 调试串口字符数组输出. \end{DoxyCompactList}\item 
+bool \hyperlink{group___debug_port_gac47fcdcebb69fc3d0a25406f022b3092}{Debug\+Port\+\_\+\+Write\+String} (const char $\ast$str)
+\begin{DoxyCompactList}\small\item\em 调试串口字符串输出. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group___debug_port_gab8d8141626dcee601e04f367ad83919c}\label{group___debug_port_gab8d8141626dcee601e04f367ad83919c}} 
+bool {\bfseries Debug\+Port\+\_\+\+Write\+Line} (const char $\ast$str)
+\item 
+void \hyperlink{group___debug_port_ga8c0e9f2cebd2a8d98f836c9cf85d6d18}{Debug\+Port\+\_\+\+Handler} (void)
+\begin{DoxyCompactList}\small\item\em 调试处理. \end{DoxyCompactList}\item 
+\hyperlink{group___debug_port_ga2a5290e9c002b3c40f94b7d42ca49d16}{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+H\+A\+N\+D\+L\+ER} (U\+A\+R\+T1\+\_\+\+T\+X\+\_\+\+I\+R\+Q\+Handler, 17)
+\begin{DoxyCompactList}\small\item\em U\+A\+R\+T1 TX Interrupt routine. \end{DoxyCompactList}\item 
+\hyperlink{group___debug_port_ga4e16b99949f99738aeeb1d2d62db1cbc}{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+H\+A\+N\+D\+L\+ER} (U\+A\+R\+T1\+\_\+\+R\+X\+\_\+\+I\+R\+Q\+Handler, 18)
+\begin{DoxyCompactList}\small\item\em U\+A\+R\+T1 RX Interrupt routine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group___debug_port_gacb83a29ae4e998016f337adf936d70cd}\label{group___debug_port_gacb83a29ae4e998016f337adf936d70cd}} 
+\index{Debug\+Port@{Debug\+Port}!D\+E\+B\+U\+G\+\_\+\+P\+O\+R\+T\+\_\+\+E\+O\+L\+\_\+\+D\+E\+L\+I\+M\+I\+T\+ER@{D\+E\+B\+U\+G\+\_\+\+P\+O\+R\+T\+\_\+\+E\+O\+L\+\_\+\+D\+E\+L\+I\+M\+I\+T\+ER}}
+\index{D\+E\+B\+U\+G\+\_\+\+P\+O\+R\+T\+\_\+\+E\+O\+L\+\_\+\+D\+E\+L\+I\+M\+I\+T\+ER@{D\+E\+B\+U\+G\+\_\+\+P\+O\+R\+T\+\_\+\+E\+O\+L\+\_\+\+D\+E\+L\+I\+M\+I\+T\+ER}!Debug\+Port@{Debug\+Port}}
+\subsubsection{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+P\+O\+R\+T\+\_\+\+E\+O\+L\+\_\+\+D\+E\+L\+I\+M\+I\+T\+ER}{DEBUG\_PORT\_EOL\_DELIMITER}}
+{\footnotesize\ttfamily \#define D\+E\+B\+U\+G\+\_\+\+P\+O\+R\+T\+\_\+\+E\+O\+L\+\_\+\+D\+E\+L\+I\+M\+I\+T\+ER~0x0D}
+
+帧结束标志符 \mbox{\Hypertarget{group___debug_port_ga43802773d24a869de1adfb0d0d869332}\label{group___debug_port_ga43802773d24a869de1adfb0d0d869332}} 
+\index{Debug\+Port@{Debug\+Port}!D\+E\+B\+U\+G\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+X\+\_\+\+R\+X\+\_\+\+B\+Y\+T\+ES@{D\+E\+B\+U\+G\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+X\+\_\+\+R\+X\+\_\+\+B\+Y\+T\+ES}}
+\index{D\+E\+B\+U\+G\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+X\+\_\+\+R\+X\+\_\+\+B\+Y\+T\+ES@{D\+E\+B\+U\+G\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+X\+\_\+\+R\+X\+\_\+\+B\+Y\+T\+ES}!Debug\+Port@{Debug\+Port}}
+\subsubsection{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+X\+\_\+\+R\+X\+\_\+\+B\+Y\+T\+ES}{DEBUG\_PORT\_MAX\_RX\_BYTES}}
+{\footnotesize\ttfamily \#define D\+E\+B\+U\+G\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+X\+\_\+\+R\+X\+\_\+\+B\+Y\+T\+ES~10}
+
+输入缓冲区大小 \mbox{\Hypertarget{group___debug_port_ga9bca70c95e91f7f2057e7295dea5122e}\label{group___debug_port_ga9bca70c95e91f7f2057e7295dea5122e}} 
+\index{Debug\+Port@{Debug\+Port}!D\+E\+B\+U\+G\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+X\+\_\+\+T\+X\+\_\+\+B\+Y\+T\+ES@{D\+E\+B\+U\+G\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+X\+\_\+\+T\+X\+\_\+\+B\+Y\+T\+ES}}
+\index{D\+E\+B\+U\+G\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+X\+\_\+\+T\+X\+\_\+\+B\+Y\+T\+ES@{D\+E\+B\+U\+G\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+X\+\_\+\+T\+X\+\_\+\+B\+Y\+T\+ES}!Debug\+Port@{Debug\+Port}}
+\subsubsection{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+X\+\_\+\+T\+X\+\_\+\+B\+Y\+T\+ES}{DEBUG\_PORT\_MAX\_TX\_BYTES}}
+{\footnotesize\ttfamily \#define D\+E\+B\+U\+G\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+X\+\_\+\+T\+X\+\_\+\+B\+Y\+T\+ES~40}
+
+
+
+输入输出缓冲区大小 
+
+输出缓冲区大小 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group___debug_port_ga2afce0a47a93eee73a314d53e4890153}\label{group___debug_port_ga2afce0a47a93eee73a314d53e4890153}} 
+\index{Debug\+Port@{Debug\+Port}!Command@{Command}}
+\index{Command@{Command}!Debug\+Port@{Debug\+Port}}
+\subsubsection{\texorpdfstring{Command}{Command}}
+{\footnotesize\ttfamily enum \hyperlink{group___debug_port_ga2afce0a47a93eee73a314d53e4890153}{Command}}
+
+
+
+输入命令 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G\+E\+T\+\_\+\+C\+U\+R\+\_\+\+I\+N\+P\+U\+T\+\_\+\+P\+W\+M\+\_\+\+R\+A\+TE@{G\+E\+T\+\_\+\+C\+U\+R\+\_\+\+I\+N\+P\+U\+T\+\_\+\+P\+W\+M\+\_\+\+R\+A\+TE}!Debug\+Port@{Debug\+Port}}\index{Debug\+Port@{Debug\+Port}!G\+E\+T\+\_\+\+C\+U\+R\+\_\+\+I\+N\+P\+U\+T\+\_\+\+P\+W\+M\+\_\+\+R\+A\+TE@{G\+E\+T\+\_\+\+C\+U\+R\+\_\+\+I\+N\+P\+U\+T\+\_\+\+P\+W\+M\+\_\+\+R\+A\+TE}}}\mbox{\Hypertarget{group___debug_port_gga2afce0a47a93eee73a314d53e4890153ac288c8dd78228e1f345e690a725505fb}\label{group___debug_port_gga2afce0a47a93eee73a314d53e4890153ac288c8dd78228e1f345e690a725505fb}} 
+G\+E\+T\+\_\+\+C\+U\+R\+\_\+\+I\+N\+P\+U\+T\+\_\+\+P\+W\+M\+\_\+\+R\+A\+TE&获取输入\+P\+W\+M占空比命令 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+T\+\_\+\+C\+U\+R\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+P\+W\+M\+\_\+\+R\+A\+TE@{S\+E\+T\+\_\+\+C\+U\+R\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+P\+W\+M\+\_\+\+R\+A\+TE}!Debug\+Port@{Debug\+Port}}\index{Debug\+Port@{Debug\+Port}!S\+E\+T\+\_\+\+C\+U\+R\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+P\+W\+M\+\_\+\+R\+A\+TE@{S\+E\+T\+\_\+\+C\+U\+R\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+P\+W\+M\+\_\+\+R\+A\+TE}}}\mbox{\Hypertarget{group___debug_port_gga2afce0a47a93eee73a314d53e4890153a90e7399e0580085ee0677cac9cf3a180}\label{group___debug_port_gga2afce0a47a93eee73a314d53e4890153a90e7399e0580085ee0677cac9cf3a180}} 
+S\+E\+T\+\_\+\+C\+U\+R\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+P\+W\+M\+\_\+\+R\+A\+TE&设置输出\+P\+W\+M占空比命令 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+I\+S\+P\+L\+A\+Y\+\_\+\+T\+A\+B\+L\+E\+\_\+\+I\+T\+E\+M\+\_\+\+V\+A\+L\+UE@{D\+I\+S\+P\+L\+A\+Y\+\_\+\+T\+A\+B\+L\+E\+\_\+\+I\+T\+E\+M\+\_\+\+V\+A\+L\+UE}!Debug\+Port@{Debug\+Port}}\index{Debug\+Port@{Debug\+Port}!D\+I\+S\+P\+L\+A\+Y\+\_\+\+T\+A\+B\+L\+E\+\_\+\+I\+T\+E\+M\+\_\+\+V\+A\+L\+UE@{D\+I\+S\+P\+L\+A\+Y\+\_\+\+T\+A\+B\+L\+E\+\_\+\+I\+T\+E\+M\+\_\+\+V\+A\+L\+UE}}}\mbox{\Hypertarget{group___debug_port_gga2afce0a47a93eee73a314d53e4890153a79bba8ed9780c39e1e5f6ff8baaeb269}\label{group___debug_port_gga2afce0a47a93eee73a314d53e4890153a79bba8ed9780c39e1e5f6ff8baaeb269}} 
+D\+I\+S\+P\+L\+A\+Y\+\_\+\+T\+A\+B\+L\+E\+\_\+\+I\+T\+E\+M\+\_\+\+V\+A\+L\+UE&查看当前\+P\+W\+M输出命令 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+A\+B\+L\+E\+\_\+\+D\+I\+S\+P\+L\+AY@{T\+A\+B\+L\+E\+\_\+\+D\+I\+S\+P\+L\+AY}!Debug\+Port@{Debug\+Port}}\index{Debug\+Port@{Debug\+Port}!T\+A\+B\+L\+E\+\_\+\+D\+I\+S\+P\+L\+AY@{T\+A\+B\+L\+E\+\_\+\+D\+I\+S\+P\+L\+AY}}}\mbox{\Hypertarget{group___debug_port_gga2afce0a47a93eee73a314d53e4890153a4f9beafec3b4a02ec855bde54050ad27}\label{group___debug_port_gga2afce0a47a93eee73a314d53e4890153a4f9beafec3b4a02ec855bde54050ad27}} 
+T\+A\+B\+L\+E\+\_\+\+D\+I\+S\+P\+L\+AY&查找表输出命令 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{U\+N\+K\+N\+O\+W\+N\+\_\+\+C\+O\+M\+M\+A\+ND@{U\+N\+K\+N\+O\+W\+N\+\_\+\+C\+O\+M\+M\+A\+ND}!Debug\+Port@{Debug\+Port}}\index{Debug\+Port@{Debug\+Port}!U\+N\+K\+N\+O\+W\+N\+\_\+\+C\+O\+M\+M\+A\+ND@{U\+N\+K\+N\+O\+W\+N\+\_\+\+C\+O\+M\+M\+A\+ND}}}\mbox{\Hypertarget{group___debug_port_gga2afce0a47a93eee73a314d53e4890153afd783e97d92382805c87eac47b6f208a}\label{group___debug_port_gga2afce0a47a93eee73a314d53e4890153afd783e97d92382805c87eac47b6f208a}} 
+U\+N\+K\+N\+O\+W\+N\+\_\+\+C\+O\+M\+M\+A\+ND&未知命令 \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group___debug_port_ga91e73a4824db7761c9fa3eb56307a349}\label{group___debug_port_ga91e73a4824db7761c9fa3eb56307a349}} 
+\index{Debug\+Port@{Debug\+Port}!Debug\+Port\+\_\+\+Close@{Debug\+Port\+\_\+\+Close}}
+\index{Debug\+Port\+\_\+\+Close@{Debug\+Port\+\_\+\+Close}!Debug\+Port@{Debug\+Port}}
+\subsubsection{\texorpdfstring{Debug\+Port\+\_\+\+Close()}{DebugPort\_Close()}}
+{\footnotesize\ttfamily void Debug\+Port\+\_\+\+Close (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+关闭调试串口. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 无} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group___debug_port_ga8c0e9f2cebd2a8d98f836c9cf85d6d18}\label{group___debug_port_ga8c0e9f2cebd2a8d98f836c9cf85d6d18}} 
+\index{Debug\+Port@{Debug\+Port}!Debug\+Port\+\_\+\+Handler@{Debug\+Port\+\_\+\+Handler}}
+\index{Debug\+Port\+\_\+\+Handler@{Debug\+Port\+\_\+\+Handler}!Debug\+Port@{Debug\+Port}}
+\subsubsection{\texorpdfstring{Debug\+Port\+\_\+\+Handler()}{DebugPort\_Handler()}}
+{\footnotesize\ttfamily void Debug\+Port\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+调试处理. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 无} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group___debug_port_gac8b6f2276832297b953b0df9c9b9c94f}\label{group___debug_port_gac8b6f2276832297b953b0df9c9b9c94f}} 
+\index{Debug\+Port@{Debug\+Port}!Debug\+Port\+\_\+\+Init@{Debug\+Port\+\_\+\+Init}}
+\index{Debug\+Port\+\_\+\+Init@{Debug\+Port\+\_\+\+Init}!Debug\+Port@{Debug\+Port}}
+\subsubsection{\texorpdfstring{Debug\+Port\+\_\+\+Init()}{DebugPort\_Init()}}
+{\footnotesize\ttfamily void Debug\+Port\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+调试串口初始化. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 无} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group___debug_port_gaf512b658a5c59c2cf06838a46fb566a6}\label{group___debug_port_gaf512b658a5c59c2cf06838a46fb566a6}} 
+\index{Debug\+Port@{Debug\+Port}!Debug\+Port\+\_\+\+Open@{Debug\+Port\+\_\+\+Open}}
+\index{Debug\+Port\+\_\+\+Open@{Debug\+Port\+\_\+\+Open}!Debug\+Port@{Debug\+Port}}
+\subsubsection{\texorpdfstring{Debug\+Port\+\_\+\+Open()}{DebugPort\_Open()}}
+{\footnotesize\ttfamily void Debug\+Port\+\_\+\+Open (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+打开调试串口. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 无} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group___debug_port_ga47bfe409c836aac8085b37893f18a76e}\label{group___debug_port_ga47bfe409c836aac8085b37893f18a76e}} 
+\index{Debug\+Port@{Debug\+Port}!Debug\+Port\+\_\+\+Write@{Debug\+Port\+\_\+\+Write}}
+\index{Debug\+Port\+\_\+\+Write@{Debug\+Port\+\_\+\+Write}!Debug\+Port@{Debug\+Port}}
+\subsubsection{\texorpdfstring{Debug\+Port\+\_\+\+Write()}{DebugPort\_Write()}}
+{\footnotesize\ttfamily bool Debug\+Port\+\_\+\+Write (\begin{DoxyParamCaption}\item[{const char $\ast$const}]{buf,  }\item[{uint8\+\_\+t}]{buf\+Len }\end{DoxyParamCaption})}
+
+
+
+调试串口字符数组输出. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf\+:字符起始地址} & \\
+\hline
+{\em buf\+Len\+:输出字符长度} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group___debug_port_gac47fcdcebb69fc3d0a25406f022b3092}\label{group___debug_port_gac47fcdcebb69fc3d0a25406f022b3092}} 
+\index{Debug\+Port@{Debug\+Port}!Debug\+Port\+\_\+\+Write\+String@{Debug\+Port\+\_\+\+Write\+String}}
+\index{Debug\+Port\+\_\+\+Write\+String@{Debug\+Port\+\_\+\+Write\+String}!Debug\+Port@{Debug\+Port}}
+\subsubsection{\texorpdfstring{Debug\+Port\+\_\+\+Write\+String()}{DebugPort\_WriteString()}}
+{\footnotesize\ttfamily bool Debug\+Port\+\_\+\+Write\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+调试串口字符串输出. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf\+:字符起始地址} & \\
+\hline
+{\em buf\+Len\+:输出字符长度} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 无} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group___debug_port_ga2a5290e9c002b3c40f94b7d42ca49d16}\label{group___debug_port_ga2a5290e9c002b3c40f94b7d42ca49d16}} 
+\index{Debug\+Port@{Debug\+Port}!I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+H\+A\+N\+D\+L\+ER@{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+H\+A\+N\+D\+L\+ER}}
+\index{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+H\+A\+N\+D\+L\+ER@{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+H\+A\+N\+D\+L\+ER}!Debug\+Port@{Debug\+Port}}
+\subsubsection{\texorpdfstring{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+H\+A\+N\+D\+L\+E\+R()}{INTERRUPT\_HANDLER()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+H\+A\+N\+D\+L\+ER (\begin{DoxyParamCaption}\item[{U\+A\+R\+T1\+\_\+\+T\+X\+\_\+\+I\+R\+Q\+Handler}]{,  }\item[{17}]{ }\end{DoxyParamCaption})}
+
+
+
+U\+A\+R\+T1 TX Interrupt routine. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group___debug_port_ga4e16b99949f99738aeeb1d2d62db1cbc}\label{group___debug_port_ga4e16b99949f99738aeeb1d2d62db1cbc}} 
+\index{Debug\+Port@{Debug\+Port}!I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+H\+A\+N\+D\+L\+ER@{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+H\+A\+N\+D\+L\+ER}}
+\index{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+H\+A\+N\+D\+L\+ER@{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+H\+A\+N\+D\+L\+ER}!Debug\+Port@{Debug\+Port}}
+\subsubsection{\texorpdfstring{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+H\+A\+N\+D\+L\+E\+R()}{INTERRUPT\_HANDLER()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+H\+A\+N\+D\+L\+ER (\begin{DoxyParamCaption}\item[{U\+A\+R\+T1\+\_\+\+R\+X\+\_\+\+I\+R\+Q\+Handler}]{,  }\item[{18}]{ }\end{DoxyParamCaption})}
+
+
+
+U\+A\+R\+T1 RX Interrupt routine. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}

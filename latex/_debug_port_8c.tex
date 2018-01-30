@@ -1,0 +1,80 @@
+\hypertarget{_debug_port_8c}{}\section{Debug\+Port.\+c File Reference}
+\label{_debug_port_8c}\index{Debug\+Port.\+c@{Debug\+Port.\+c}}
+
+
+调试模块  
+
+
+{\ttfamily \#include \char`\"{}Debug\+Port.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}string.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stdio.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stdlib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}assert.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_debug_port_ctrl__t}{Debug\+Port\+Ctrl\+\_\+t}
+\begin{DoxyCompactList}\small\item\em 调试模块控制结构体 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_command_item__t}{Command\+Item\+\_\+t}
+\begin{DoxyCompactList}\small\item\em 输入命令结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___debug_port_ga9bca70c95e91f7f2057e7295dea5122e}{D\+E\+B\+U\+G\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+X\+\_\+\+T\+X\+\_\+\+B\+Y\+T\+ES}~40
+\begin{DoxyCompactList}\small\item\em 输入输出缓冲区大小 \end{DoxyCompactList}\item 
+\#define \hyperlink{group___debug_port_ga43802773d24a869de1adfb0d0d869332}{D\+E\+B\+U\+G\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+X\+\_\+\+R\+X\+\_\+\+B\+Y\+T\+ES}~10
+\item 
+\#define \hyperlink{group___debug_port_gacb83a29ae4e998016f337adf936d70cd}{D\+E\+B\+U\+G\+\_\+\+P\+O\+R\+T\+\_\+\+E\+O\+L\+\_\+\+D\+E\+L\+I\+M\+I\+T\+ER}~0x0D
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ {\bfseries cmd\+Func}) (void)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___debug_port_ga2afce0a47a93eee73a314d53e4890153}{Command} \{ \newline
+\hyperlink{group___debug_port_gga2afce0a47a93eee73a314d53e4890153ac288c8dd78228e1f345e690a725505fb}{G\+E\+T\+\_\+\+C\+U\+R\+\_\+\+I\+N\+P\+U\+T\+\_\+\+P\+W\+M\+\_\+\+R\+A\+TE} = \textquotesingle{}a\textquotesingle{}, 
+\hyperlink{group___debug_port_gga2afce0a47a93eee73a314d53e4890153a90e7399e0580085ee0677cac9cf3a180}{S\+E\+T\+\_\+\+C\+U\+R\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+P\+W\+M\+\_\+\+R\+A\+TE} = \textquotesingle{}b\textquotesingle{}, 
+\hyperlink{group___debug_port_gga2afce0a47a93eee73a314d53e4890153a79bba8ed9780c39e1e5f6ff8baaeb269}{D\+I\+S\+P\+L\+A\+Y\+\_\+\+T\+A\+B\+L\+E\+\_\+\+I\+T\+E\+M\+\_\+\+V\+A\+L\+UE} = \textquotesingle{}c\textquotesingle{}, 
+\hyperlink{group___debug_port_gga2afce0a47a93eee73a314d53e4890153a4f9beafec3b4a02ec855bde54050ad27}{T\+A\+B\+L\+E\+\_\+\+D\+I\+S\+P\+L\+AY} = \textquotesingle{}d\textquotesingle{}, 
+\newline
+\hyperlink{group___debug_port_gga2afce0a47a93eee73a314d53e4890153afd783e97d92382805c87eac47b6f208a}{U\+N\+K\+N\+O\+W\+N\+\_\+\+C\+O\+M\+M\+A\+ND}
+ \}\begin{DoxyCompactList}\small\item\em 输入命令 \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___debug_port_gac8b6f2276832297b953b0df9c9b9c94f}{Debug\+Port\+\_\+\+Init} (void)
+\begin{DoxyCompactList}\small\item\em 调试串口初始化. \end{DoxyCompactList}\item 
+void \hyperlink{group___debug_port_gaf512b658a5c59c2cf06838a46fb566a6}{Debug\+Port\+\_\+\+Open} (void)
+\begin{DoxyCompactList}\small\item\em 打开调试串口. \end{DoxyCompactList}\item 
+void \hyperlink{group___debug_port_ga91e73a4824db7761c9fa3eb56307a349}{Debug\+Port\+\_\+\+Close} (void)
+\begin{DoxyCompactList}\small\item\em 关闭调试串口. \end{DoxyCompactList}\item 
+bool \hyperlink{group___debug_port_ga47bfe409c836aac8085b37893f18a76e}{Debug\+Port\+\_\+\+Write} (const char $\ast$const buf, uint8\+\_\+t buf\+Len)
+\begin{DoxyCompactList}\small\item\em 调试串口字符数组输出. \end{DoxyCompactList}\item 
+bool \hyperlink{group___debug_port_gac47fcdcebb69fc3d0a25406f022b3092}{Debug\+Port\+\_\+\+Write\+String} (const char $\ast$str)
+\begin{DoxyCompactList}\small\item\em 调试串口字符串输出. \end{DoxyCompactList}\item 
+bool {\bfseries Debug\+Port\+\_\+\+Write\+Line} (const char $\ast$str)
+\item 
+void \hyperlink{group___debug_port_ga8c0e9f2cebd2a8d98f836c9cf85d6d18}{Debug\+Port\+\_\+\+Handler} (void)
+\begin{DoxyCompactList}\small\item\em 调试处理. \end{DoxyCompactList}\item 
+\hyperlink{group___debug_port_ga2a5290e9c002b3c40f94b7d42ca49d16}{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+H\+A\+N\+D\+L\+ER} (U\+A\+R\+T1\+\_\+\+T\+X\+\_\+\+I\+R\+Q\+Handler, 17)
+\begin{DoxyCompactList}\small\item\em U\+A\+R\+T1 TX Interrupt routine. \end{DoxyCompactList}\item 
+\hyperlink{group___debug_port_ga4e16b99949f99738aeeb1d2d62db1cbc}{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+H\+A\+N\+D\+L\+ER} (U\+A\+R\+T1\+\_\+\+R\+X\+\_\+\+I\+R\+Q\+Handler, 18)
+\begin{DoxyCompactList}\small\item\em U\+A\+R\+T1 RX Interrupt routine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+调试模块 
+
+\begin{DoxyAuthor}{Author}
+A\+W\+C\+\_\+\+E\+R\+D\+\_\+\+T\+E\+A\+M3 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2018-\/1-\/12 
+\end{DoxyDate}
