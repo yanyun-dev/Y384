@@ -12,7 +12,7 @@
           
           
           
-        <Column0>44</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+        <Column0>205</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
       </Workspace>
       <Build>
         
@@ -25,11 +25,11 @@
         <ColumnWidth1>1307</ColumnWidth1>
       </Debug-Log>
       <TerminalIO/>
-    </Static>
+    <Find-in-Files><ColumnWidth0>470</ColumnWidth0><ColumnWidth1>67</ColumnWidth1><ColumnWidth2>806</ColumnWidth2></Find-in-Files></Static>
     <Windows>
       
       
-    <Wnd2>
+    <Wnd0>
         <Tabs>
           <Tab>
             <Identity>TabID-23976-19317</Identity>
@@ -37,11 +37,11 @@
             <Factory>Workspace</Factory>
             <Session>
               
-            <NodeDict><ExpandedNode>Y384</ExpandedNode><ExpandedNode>Y384/App</ExpandedNode></NodeDict></Session>
+            <NodeDict><ExpandedNode>Y384</ExpandedNode><ExpandedNode>Y384/App</ExpandedNode><ExpandedNode>Y384/App/transform.c</ExpandedNode></NodeDict></Session>
           </Tab>
         </Tabs>
         
-      <SelectedTab>0</SelectedTab></Wnd2><Wnd3>
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd1>
         <Tabs>
           <Tab>
             <Identity>TabID-31588-19379</Identity>
@@ -55,22 +55,22 @@
             <Factory>Debug-Log</Factory>
             <Session/>
           </Tab>
-        </Tabs>
+        <Tab><Identity>TabID-8390-5564</Identity><TabName>Find in Files</TabName><Factory>Find-in-Files</Factory><Session/></Tab></Tabs>
         
-      <SelectedTab>0</SelectedTab></Wnd3></Windows>
+      <SelectedTab>0</SelectedTab></Wnd1></Windows>
     <Editor>
       
       
       
       
-    <Pane><Tab><Factory>TextEditor</Factory><Filename>D:\Program Files (x86)\IAR Systems\Embedded Workbench 6.0\stm8\doc\infocenter\index.ENU.html</Filename></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\main.c</Filename><XPos>0</XPos><YPos>17</YPos><SelStart>715</SelStart><SelEnd>715</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\transform.c</Filename><XPos>0</XPos><YPos>36</YPos><SelStart>2671</SelStart><SelEnd>2736</SelEnd></Tab><ActiveTab>2</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\sample.c</Filename><XPos>0</XPos><YPos>52</YPos><SelStart>1830</SelStart><SelEnd>1830</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Libraries\STM8S_StdPeriph_Driver\src\stm8s_tim1.c</Filename><XPos>0</XPos><YPos>546</YPos><SelStart>24005</SelStart><SelEnd>24005</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\PWM_out.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>105</SelStart><SelEnd>105</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>D:\Program Files (x86)\IAR Systems\Embedded Workbench 6.0\stm8\doc\infocenter\index.ENU.html</Filename></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\transform.c</Filename><XPos>0</XPos><YPos>48</YPos><SelStart>2715</SelStart><SelEnd>2715</SelEnd></Tab><ActiveTab>1</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Libraries\STM8S_StdPeriph_Driver\src\stm8s_tim1.c</Filename><XPos>0</XPos><YPos>546</YPos><SelStart>24005</SelStart><SelEnd>24005</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\PWM_out.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>141</SelStart><SelEnd>141</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Libraries\STM8S_StdPeriph_Driver\src\stm8s_tim2.c</Filename><XPos>0</XPos><YPos>450</YPos><SelStart>16961</SelStart><SelEnd>16961</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_gpio.h</Filename><XPos>0</XPos><YPos>44</YPos><SelStart>2865</SelStart><SelEnd>2891</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\main.c</Filename><XPos>0</XPos><YPos>20</YPos><SelStart>606</SelStart><SelEnd>606</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Libraries\STM8S_StdPeriph_Driver\src\stm8s_gpio.c</Filename><XPos>0</XPos><YPos>144</YPos><SelStart>5472</SelStart><SelEnd>5504</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\sample.c</Filename><XPos>0</XPos><YPos>47</YPos><SelStart>1961</SelStart><SelEnd>1961</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\transform.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>299</SelStart><SelEnd>299</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\sample.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>62</SelStart><SelEnd>62</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
     <Positions>
       
       
       
       
       
-    <Top><Row0><Sizes><Toolbar-002606a8><key>iaridepm.enu1</key></Toolbar-002606a8></Sizes></Row0><Row1><Sizes/></Row1></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>513</Bottom><Right>118</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>146413</sizeHorzCX><sizeHorzCY>291545</sizeHorzCY><sizeVertCX>87848</sizeVertCX><sizeVertCY>750729</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>128</Bottom><Right>1368</Right><x>-2</x><y>-2</y><xscreen>1370</xscreen><yscreen>130</yscreen><sizeHorzCX>1002928</sizeHorzCX><sizeHorzCY>189504</sizeHorzCY><sizeVertCX>146413</sizeVertCX><sizeVertCY>291545</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+    <Top><Row0><Sizes><Toolbar-002606a8><key>iaridepm.enu1</key></Toolbar-002606a8></Sizes></Row0><Row1><Sizes/></Row1></Top><Left><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>429</Bottom><Right>296</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>146413</sizeHorzCX><sizeHorzCY>291545</sizeHorzCY><sizeVertCX>218155</sizeVertCX><sizeVertCY>628280</sizeVertCY></Rect></Wnd0></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>212</Bottom><Right>1368</Right><x>-2</x><y>-2</y><xscreen>1370</xscreen><yscreen>214</yscreen><sizeHorzCX>1002928</sizeHorzCX><sizeHorzCY>311953</sizeHorzCY><sizeVertCX>146413</sizeVertCX><sizeVertCY>291545</sizeVertCY></Rect></Wnd1></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
   </Desktop>
 </Workspace>
 

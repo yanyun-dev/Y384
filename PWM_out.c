@@ -16,10 +16,11 @@ void set_out_pwm(uint16_t rate)
 
 static void PWM_Out_Config(void)
 {
-   TIM2_TimeBaseInit(TIM2_PRESCALER_4, 0xFFFE);
+   TIM2_TimeBaseInit(TIM2_PRESCALER_1, 0xFFFE);
    TIM2_OC3Init(TIM2_OCMODE_PWM1, TIM2_OUTPUTSTATE_ENABLE, 0, TIM2_OCPOLARITY_HIGH);
   TIM2_OC3PreloadConfig(ENABLE);
 
   TIM2_ARRPreloadConfig(ENABLE);
   TIM2_Cmd(ENABLE);
 }
+

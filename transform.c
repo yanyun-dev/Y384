@@ -19,7 +19,7 @@
 #define TRANSFORM_TABLE_SIZE 256
 
 typedef struct {
-  uint8_t index_record;
+  uint16_t index_record;
   uint16_t table[TRANSFORM_TABLE_SIZE];
 } TransTable_t;
 
@@ -51,11 +51,14 @@ void transform_init(void)
 
 void transfrom_handle(void)
 {
+  uint8_t quotient, remainder;
   tTransTable.index_record = get_input_pwm();
-  assert(tTransTable.index_record < 128);
+  quotient = (uint8_t)(tTransTable.index_record >> 6);
+  remainder = (uint8_t)(tTransTable.index_record & (uint16_t)0x3F);
+  assert(tTransTable.index_record < (uint16_t)16384);
 #if 1
 //  set_out_pwm(tTransTable.table[tTransTable.index_record]);
-  TIM2_SetCompare3(tTransTable.table[tTransTable.index_record]);
+  TIM2_SetCompare3(tTransTable.table[quotient] + ((tTransTable.table[quotient + 1] - tTransTable.table[quotient]) * remainder) >> 6);
 #else
   set_out_pwm(tTransTable.index_record << 9 - 1);
 #endif

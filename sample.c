@@ -18,6 +18,8 @@ typedef struct PWMStat{
 
 static PWMStat_t tPWMStat;
 
+static void Debug_Out_Config(void);
+
 //void process_sample_input(void)
 //{
 //  uint16_t Conversion_Value = 0;
@@ -58,7 +60,7 @@ uint8_t get_input_pwm(void)
     if (tPWMStat.isFull && tPWMStat.IC1Total >= tPWMStat.IC2Total)
     {
       if (tPWMStat.IC1Total)
-        tPWMStat.Result = (uint8_t)((tPWMStat.IC2Total << 8) / (tPWMStat.IC1Total));
+        tPWMStat.Result = (uint8_t)((tPWMStat.IC2Total << 14) / (tPWMStat.IC1Total)); // 8 + 6
       else
         printf("error!\r\n");
       tPWMStat.isFull = false;
@@ -98,6 +100,10 @@ void TIM1_PWM_Capture_Init(void)
 //  GPIOC->CR1 |= 0x20;
 //  GPIOC->CR2 &= 0xdf;
   GPIO_Init(GPIOC, GPIO_PIN_6, GPIO_MODE_IN_FL_NO_IT);
+  
+//  Debug_Out_Config();
+  
+  GPIO_Init(GPIOB, GPIO_PIN_5, GPIO_MODE_OUT_OD_LOW_FAST);
 #if 0
   TIM1_DeInit();
   TIM1_TimeBaseInit(1600, TIM1_COUNTERMODE_UP, 20000, 0);
@@ -116,7 +122,7 @@ void TIM1_PWM_Capture_Init(void)
   TIM1_Cmd(ENABLE);
 #else
   TIM1_DeInit();
-  TIM1_TimeBaseInit(64, TIM1_COUNTERMODE_UP, 0xffff, 0);
+  TIM1_TimeBaseInit(16, TIM1_COUNTERMODE_UP, 0xffff, 0);
   TIM1->CCMR1 |= 0x01;
   TIM1->CCER1 &= (~0x02);
   TIM1->CCMR2 |= 0x02;
@@ -154,6 +160,7 @@ INTERRUPT_HANDLER(TIM1_CAP_COM_IRQHandler, 12)
 //    tPWMStat.IC1Values[tPWMStat.InsertPos] += TIM1_GetCapture1();
 //    tPWMStat.IC1Total += tPWMStat.IC1Values[tPWMStat.InsertPos];
     tPWMStat.IC1Total += TIM1_GetCapture1();
+    GPIOB->ODR |= (uint8_t)GPIO_PIN_5;
     TIM1_ClearITPendingBit(TIM1_IT_CC1);
   }
   if (TIM1_GetITStatus(TIM1_IT_CC2))
@@ -162,6 +169,7 @@ INTERRUPT_HANDLER(TIM1_CAP_COM_IRQHandler, 12)
 //    tPWMStat.IC2Values[tPWMStat.InsertPos] = TIM1_GetCapture2();
 //    tPWMStat.IC2Total += tPWMStat.IC2Values[tPWMStat.InsertPos];
     tPWMStat.IC2Total += TIM1_GetCapture2();
+    GPIOB->ODR &= (uint8_t)(~GPIO_PIN_5);
     TIM1_ClearITPendingBit(TIM1_IT_CC2);
   }
   return;
@@ -174,3 +182,7 @@ void Sample_init(void)
 }
 
 
+void Debug_Out_Config(void)
+{
+  GPIO_Init(GPIOB, GPIO_PIN_4, GPIO_MODE_OUT_PP_LOW_SLOW);
+}
