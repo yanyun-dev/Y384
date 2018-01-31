@@ -1,10 +1,9 @@
 #include "sample.h"
 #include "stm8s.h"
 #include "stdio.h"
-#include "stdbool.h"
 
-#define SAMPLE_NUMS 64
-#define SAMPLE_SHIFT 6
+#define SAMPLE_NUMS 32
+#define SAMPLE_SHIFT 5
 
 typedef struct PWMStat{
   uint8_t InsertPos;
@@ -13,7 +12,7 @@ typedef struct PWMStat{
 //  uint16_t IC2Values[SAMPLE_NUMS];
   uint32_t IC1Total;
   uint32_t IC2Total;
-  uint8_t Result;
+  uint16_t Result;
 }PWMStat_t;
 
 static PWMStat_t tPWMStat;
@@ -54,20 +53,30 @@ static void Debug_Out_Config(void);
 //    }
 //      
 //}
+bool isNeedUpdate(void)
+{
+  return tPWMStat.isFull;
+}
 
-uint8_t get_input_pwm(void)
+void endUpdate(void)
+{
+  tPWMStat.isFull = false;
+   tPWMStat.IC2Total = 0;
+    tPWMStat.IC1Total = 0;
+    TIM1->IER |= 0x06;
+}
+
+uint16_t get_input_pwm(void)
 {
     if (tPWMStat.isFull && tPWMStat.IC1Total >= tPWMStat.IC2Total)
     {
-      if (tPWMStat.IC1Total)
-        tPWMStat.Result = (uint8_t)((tPWMStat.IC2Total << 14) / (tPWMStat.IC1Total)); // 8 + 6
+      if (tPWMStat.IC1Total>>1)
+        tPWMStat.Result = (uint16_t)((tPWMStat.IC2Total << 12) / (tPWMStat.IC1Total>>1)); // 8 + 5
       else
         printf("error!\r\n");
-      tPWMStat.isFull = false;
-      tPWMStat.IC2Total = 0;
-       tPWMStat.IC1Total = 0;
+//      tPWMStat.isFull = false;
 //       TIM1->CR1 |= TIM1_CR1_CEN;
-       TIM1->IER |= 0x06;
+      printf("%ld:%ld\r\n", tPWMStat.IC2Total, tPWMStat.IC1Total);
     }
   return tPWMStat.Result;
 }
@@ -122,13 +131,15 @@ void TIM1_PWM_Capture_Init(void)
   TIM1_Cmd(ENABLE);
 #else
   TIM1_DeInit();
-  TIM1_TimeBaseInit(16, TIM1_COUNTERMODE_UP, 0xffff, 0);
+  TIM1_TimeBaseInit(8, TIM1_COUNTERMODE_UP, 0xffff, 0);
   TIM1->CCMR1 |= 0x01;
   TIM1->CCER1 &= (~0x02);
   TIM1->CCMR2 |= 0x02;
   
   TIM1->CCER1 |= 0x20;
   TIM1->SMCR |= 0x54;
+  TIM1->CCMR1 |= 0xF0;
+  TIM1->CCMR2 |= 0xF0;
   TIM1->CCER1 |= 0x11;
   TIM1->IER |= 0x06;
   
@@ -160,7 +171,7 @@ INTERRUPT_HANDLER(TIM1_CAP_COM_IRQHandler, 12)
 //    tPWMStat.IC1Values[tPWMStat.InsertPos] += TIM1_GetCapture1();
 //    tPWMStat.IC1Total += tPWMStat.IC1Values[tPWMStat.InsertPos];
     tPWMStat.IC1Total += TIM1_GetCapture1();
-    GPIOB->ODR |= (uint8_t)GPIO_PIN_5;
+    GPIOB->ODR ^= (uint8_t)GPIO_PIN_5;
     TIM1_ClearITPendingBit(TIM1_IT_CC1);
   }
   if (TIM1_GetITStatus(TIM1_IT_CC2))
@@ -169,7 +180,8 @@ INTERRUPT_HANDLER(TIM1_CAP_COM_IRQHandler, 12)
 //    tPWMStat.IC2Values[tPWMStat.InsertPos] = TIM1_GetCapture2();
 //    tPWMStat.IC2Total += tPWMStat.IC2Values[tPWMStat.InsertPos];
     tPWMStat.IC2Total += TIM1_GetCapture2();
-    GPIOB->ODR &= (uint8_t)(~GPIO_PIN_5);
+//    GPIOB->ODR |= (uint8_t)(~GPIO_PIN_5);
+    GPIOB->ODR ^= (uint8_t)(GPIO_PIN_5);
     TIM1_ClearITPendingBit(TIM1_IT_CC2);
   }
   return;

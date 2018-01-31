@@ -52,16 +52,23 @@ void transform_init(void)
 void transfrom_handle(void)
 {
   uint8_t quotient, remainder;
-  tTransTable.index_record = get_input_pwm();
-  quotient = (uint8_t)(tTransTable.index_record >> 6);
-  remainder = (uint8_t)(tTransTable.index_record & (uint16_t)0x3F);
-  assert(tTransTable.index_record < (uint16_t)16384);
+  if (isNeedUpdate())
+  {
+    tTransTable.index_record = get_input_pwm();
+    quotient = (uint8_t)(tTransTable.index_record >> 5);
+    remainder = (uint8_t)(tTransTable.index_record & (uint16_t)0x1F);
+    assert(tTransTable.index_record < (uint16_t)16384);
 #if 1
 //  set_out_pwm(tTransTable.table[tTransTable.index_record]);
-  TIM2_SetCompare3(tTransTable.table[quotient] + ((tTransTable.table[quotient + 1] - tTransTable.table[quotient]) * remainder) >> 6);
+    if (tTransTable.table[quotient + 1] > tTransTable.table[quotient])
+      TIM2_SetCompare3(tTransTable.table[quotient] + ((uint16_t)((tTransTable.table[quotient + 1] - tTransTable.table[quotient])>>3) * (remainder >> 2)));
+    else
+      TIM2_SetCompare3(tTransTable.table[quotient] + ((uint16_t)((tTransTable.table[quotient] - tTransTable.table[quotient + 1])>>3) * (remainder >> 2)));
 #else
   set_out_pwm(tTransTable.index_record << 9 - 1);
 #endif
+    endUpdate();
+  }
 }
 
 
