@@ -12,36 +12,24 @@
           
           
           
-        <Column0>222</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
-      </Workspace>
+        <Column0>124</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      <PreferedWindows><Position>1</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows></Workspace>
       <Build>
         
         
         
         
-      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>980</ColumnWidth1><ColumnWidth2>261</ColumnWidth2><ColumnWidth3>65</ColumnWidth3></Build>
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>759</ColumnWidth1><ColumnWidth2>261</ColumnWidth2><ColumnWidth3>65</ColumnWidth3></Build>
       <Debug-Log>
-        <ColumnWidth0>20</ColumnWidth0>
-        <ColumnWidth1>1307</ColumnWidth1>
-      </Debug-Log>
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1307</ColumnWidth1></Debug-Log>
       <TerminalIO/>
     <Find-in-Files><ColumnWidth0>470</ColumnWidth0><ColumnWidth1>67</ColumnWidth1><ColumnWidth2>806</ColumnWidth2></Find-in-Files></Static>
     <Windows>
       
       
     <Wnd0>
-        <Tabs>
-          <Tab>
-            <Identity>TabID-23976-19317</Identity>
-            <TabName>Workspace</TabName>
-            <Factory>Workspace</Factory>
-            <Session>
-              
-            <NodeDict><ExpandedNode>Y384</ExpandedNode><ExpandedNode>Y384/App</ExpandedNode></NodeDict></Session>
-          </Tab>
-        </Tabs>
-        
-      <SelectedTab>0</SelectedTab></Wnd0><Wnd1>
         <Tabs>
           <Tab>
             <Identity>TabID-31588-19379</Identity>
@@ -57,20 +45,20 @@
           </Tab>
         <Tab><Identity>TabID-8390-5564</Identity><TabName>Find in Files</TabName><Factory>Find-in-Files</Factory><Session/></Tab></Tabs>
         
-      <SelectedTab>0</SelectedTab></Wnd1></Windows>
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd1><Tabs><Tab><Identity>TabID-30116-17582</Identity><TabName>Workspace</TabName><Factory>Workspace</Factory><Session><NodeDict><ExpandedNode>Y384</ExpandedNode></NodeDict></Session></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd1></Windows>
     <Editor>
       
       
       
       
-    <Pane><Tab><Factory>TextEditor</Factory><Filename>D:\Program Files (x86)\IAR Systems\Embedded Workbench 6.0\stm8\doc\infocenter\index.ENU.html</Filename></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Libraries\STM8S_StdPeriph_Driver\src\stm8s_tim1.c</Filename><XPos>0</XPos><YPos>546</YPos><SelStart>24005</SelStart><SelEnd>24005</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\PWM_out.c</Filename><XPos>0</XPos><YPos>6</YPos><SelStart>285</SelStart><SelEnd>285</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Libraries\STM8S_StdPeriph_Driver\src\stm8s_tim2.c</Filename><XPos>0</XPos><YPos>439</YPos><SelStart>16881</SelStart><SelEnd>16881</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_gpio.h</Filename><XPos>0</XPos><YPos>44</YPos><SelStart>2865</SelStart><SelEnd>2891</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\transform.c</Filename><XPos>0</XPos><YPos>48</YPos><SelStart>2966</SelStart><SelEnd>2966</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\main.c</Filename><XPos>0</XPos><YPos>20</YPos><SelStart>878</SelStart><SelEnd>878</SelEnd></Tab><ActiveTab>6</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Libraries\STM8S_StdPeriph_Driver\src\stm8s_gpio.c</Filename><XPos>0</XPos><YPos>144</YPos><SelStart>5472</SelStart><SelEnd>5504</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\sample.c</Filename><XPos>0</XPos><YPos>126</YPos><SelStart>3647</SelStart><SelEnd>3647</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\transform.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>299</SelStart><SelEnd>299</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\sample.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>74</SelStart><SelEnd>74</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>D:\Program Files (x86)\IAR Systems\Embedded Workbench 6.0\stm8\doc\infocenter\index.ENU.html</Filename></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Libraries\STM8S_StdPeriph_Driver\src\stm8s_tim1.c</Filename><XPos>0</XPos><YPos>2136</YPos><SelStart>75663</SelStart><SelEnd>75663</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Libraries\STM8S_StdPeriph_Driver\src\stm8s_tim2.c</Filename><XPos>0</XPos><YPos>439</YPos><SelStart>16881</SelStart><SelEnd>16881</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_gpio.h</Filename><XPos>0</XPos><YPos>44</YPos><SelStart>2865</SelStart><SelEnd>2891</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Libraries\STM8S_StdPeriph_Driver\src\stm8s_gpio.c</Filename><XPos>0</XPos><YPos>144</YPos><SelStart>5472</SelStart><SelEnd>5504</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\transform.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>107</SelStart><SelEnd>107</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\sample.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>74</SelStart><SelEnd>74</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\DebugPort.c</Filename><XPos>0</XPos><YPos>117</YPos><SelStart>3143</SelStart><SelEnd>3164</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Libraries\STM8S_StdPeriph_Driver\src\stm8s_itc.c</Filename><XPos>0</XPos><YPos>33</YPos><SelStart>2302</SelStart><SelEnd>2302</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\IWDG_ctrl.c</Filename><XPos>0</XPos><YPos>42</YPos><SelStart>688</SelStart><SelEnd>710</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\stm8s_it.c</Filename><XPos>0</XPos><YPos>472</YPos><SelStart>12263</SelStart><SelEnd>12569</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_tim1.h</Filename><XPos>0</XPos><YPos>276</YPos><SelStart>10572</SelStart><SelEnd>10572</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\main.c</Filename><XPos>0</XPos><YPos>18</YPos><SelStart>811</SelStart><SelEnd>811</SelEnd></Tab><ActiveTab>12</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\sample.c</Filename><XPos>0</XPos><YPos>198</YPos><SelStart>5773</SelStart><SelEnd>5773</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\transform.c</Filename><XPos>0</XPos><YPos>95</YPos><SelStart>5388</SelStart><SelEnd>5388</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\timer.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>42</SelStart><SelEnd>42</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\timer.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>51</SelStart><SelEnd>51</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Libraries\STM8S_StdPeriph_Driver\src\stm8s_tim4.c</Filename><XPos>0</XPos><YPos>52</YPos><SelStart>2680</SelStart><SelEnd>2691</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\PWM_out.c</Filename><XPos>0</XPos><YPos>6</YPos><SelStart>293</SelStart><SelEnd>293</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
     <Positions>
       
       
       
       
       
-    <Top><Row0><Sizes><Toolbar-02700b50><key>iaridepm.enu1</key></Toolbar-02700b50></Sizes></Row0><Row1><Sizes/></Row1></Top><Left><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>211</Bottom><Right>296</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>198216</sizeHorzCX><sizeHorzCY>427350</sizeHorzCY><sizeVertCX>295342</sizeVertCX><sizeVertCY>455128</sizeVertCY></Rect></Wnd0></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>212</Bottom><Right>1011</Right><x>-2</x><y>-2</y><xscreen>1013</xscreen><yscreen>214</yscreen><sizeHorzCX>1003964</sizeHorzCX><sizeHorzCY>457265</sizeHorzCY><sizeVertCX>198216</sizeVertCX><sizeVertCY>427350</sizeVertCY></Rect></Wnd1></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+    <Top><Row0><Sizes><Toolbar-00b8b3f0><key>iaridepm.enu1</key></Toolbar-00b8b3f0></Sizes></Row0><Row1><Sizes/></Row1></Top><Left><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>508</Bottom><Right>198</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>146413</sizeHorzCX><sizeHorzCY>291545</sizeHorzCY><sizeVertCX>146413</sizeVertCX><sizeVertCY>743440</sizeVertCY></Rect></Wnd1></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>133</Bottom><Right>1368</Right><x>-2</x><y>-2</y><xscreen>1370</xscreen><yscreen>135</yscreen><sizeHorzCX>1002928</sizeHorzCX><sizeHorzCY>196793</sizeHorzCY><sizeVertCX>198389</sizeVertCX><sizeVertCY>427114</sizeVertCY></Rect></Wnd0></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
   </Desktop>
 </Workspace>
 

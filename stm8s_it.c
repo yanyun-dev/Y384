@@ -238,18 +238,7 @@ INTERRUPT_HANDLER(SPI_IRQHandler, 10)
   */
 }
 
-/**
-  * @brief  Timer1 Update/Overflow/Trigger/Break Interrupt routine
-  * @param None
-  * @retval
-  * None
-  */
-INTERRUPT_HANDLER(TIM1_UPD_OVF_TRG_BRK_IRQHandler, 11)
-{
-  /* In order to detect unexpected events during development,
-     it is recommended to set a breakpoint on the following instruction.
-  */
-}
+
 
 ///**
 //  * @brief  Timer1 Capture/Compare Interrupt routine
@@ -488,17 +477,17 @@ INTERRUPT_HANDLER(TIM6_UPD_OVF_TRG_IRQHandler, 23)
 }
 #else /*STM8S208, STM8S207, STM8S105 or STM8S103 or STM8AF62Ax or STM8AF52Ax or STM8AF626x */
 /**
-  * @brief  Timer4 Update/Overflow Interrupt routine
-  * @param None
-  * @retval
-  * None
-  */
- INTERRUPT_HANDLER(TIM4_UPD_OVF_IRQHandler, 23)
-{
-  /* In order to detect unexpected events during development,
-     it is recommended to set a breakpoint on the following instruction.
-  */
-}
+//  * @brief  Timer4 Update/Overflow Interrupt routine
+//  * @param None
+//  * @retval
+//  * None
+//  */
+// INTERRUPT_HANDLER(TIM4_UPD_OVF_IRQHandler, 23)
+//{
+//  /* In order to detect unexpected events during development,
+//     it is recommended to set a breakpoint on the following instruction.
+//  */
+//}
 #endif /*STM8S903*/
 
 /**

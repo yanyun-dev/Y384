@@ -1537,6 +1537,9 @@
       <name>$PROJ_DIR$\stm8s_it.c</name>
     </file>
     <file>
+      <name>$PROJ_DIR$\timer.c</name>
+    </file>
+    <file>
       <name>$PROJ_DIR$\transform.c</name>
     </file>
   </group>

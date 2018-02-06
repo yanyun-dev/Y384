@@ -2,8 +2,10 @@
 #include "stm8s.h"
 #include "stdio.h"
 
-#define SAMPLE_NUMS 32
-#define SAMPLE_SHIFT 5
+#define SAMPLE_NUMS 8
+#define SAMPLE_SHIFT 3
+
+#define MAX_INPUT_VALUE ((uint16_t)0x1FE0)
 
 typedef struct PWMStat{
   uint8_t InsertPos;
@@ -55,6 +57,12 @@ static void Debug_Out_Config(void);
 //}
 bool isNeedUpdate(void)
 {
+//  if(TIM1_GetFlagStatus(TIM1_FLAG_UPDATE))
+//  {
+//    TIM1_ClearFlag(TIM1_FLAG_UPDATE);
+//     tPWMStat.Result = MAX_INPUT_VALUE;
+//      tPWMStat.isFull = true;
+//  }
   return tPWMStat.isFull;
 }
 
@@ -76,7 +84,7 @@ uint16_t get_input_pwm(void)
         printf("error!\r\n");
 //      tPWMStat.isFull = false;
 //       TIM1->CR1 |= TIM1_CR1_CEN;
-      printf("%ld:%ld\r\n", tPWMStat.IC2Total, tPWMStat.IC1Total);
+//      printf("%ld:%ld\r\n", tPWMStat.IC2Total, tPWMStat.IC1Total);
     }
   return tPWMStat.Result;
 }
@@ -126,12 +134,13 @@ void TIM1_PWM_Capture_Init(void)
   TIM1->CCER1 |= 0x20;
   TIM1->SMCR |= 0x50;
   TIM1->SMCR |= 0x04;
-  TIM1->IER |= 0x06;
+  TIM1->IER |= 0x07;
   TIM1->CCER1 |= 0x11;
   TIM1_Cmd(ENABLE);
 #else
   TIM1_DeInit();
   TIM1_TimeBaseInit(8, TIM1_COUNTERMODE_UP, 0xffff, 0);
+  TIM1->CR1 |= 0x04;
   TIM1->CCMR1 |= 0x01;
   TIM1->CCER1 &= (~0x02);
   TIM1->CCMR2 |= 0x02;
@@ -141,7 +150,8 @@ void TIM1_PWM_Capture_Init(void)
   TIM1->CCMR1 |= 0xF0;
   TIM1->CCMR2 |= 0xF0;
   TIM1->CCER1 |= 0x11;
-  TIM1->IER |= 0x06;
+  TIM1->IER |= 0x07;
+//  TIM1->IER |= 0x06;
   
   TIM1_Cmd(ENABLE);
 #endif
@@ -185,6 +195,28 @@ INTERRUPT_HANDLER(TIM1_CAP_COM_IRQHandler, 12)
     TIM1_ClearITPendingBit(TIM1_IT_CC2);
   }
   return;
+}
+
+/**
+  * @brief  Timer1 Update/Overflow/Trigger/Break Interrupt routine
+  * @param None
+  * @retval
+  * None
+  */
+INTERRUPT_HANDLER(TIM1_UPD_OVF_TRG_BRK_IRQHandler, 11)
+{
+  /* In order to detect unexpected events during development,
+     it is recommended to set a breakpoint on the following instruction.
+  */
+  if (TIM1_GetITStatus(TIM1_IT_UPDATE))
+  {
+    TIM1_ClearITPendingBit(TIM1_IT_UPDATE);
+    if (!TIM1_GetFlagStatus(TIM1_FLAG_CC1)) //¼ÆËãÆ÷Òç³ö
+    {
+      tPWMStat.Result = MAX_INPUT_VALUE;
+      tPWMStat.isFull = true;
+    }
+  }
 }
 
 

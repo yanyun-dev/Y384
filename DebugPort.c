@@ -135,7 +135,7 @@ static void DebugPort_SetCurPWMRateOut(void)
     char **pstr = NULL;
     uint16_t arg1 = strtoul(identifierPos+1, pstr, 0);
     printf("arg1:%d\r\n", arg1);
-    if(table_index_value_set(arg1))
+    if(table_index_value_set(arg1 * 655))
       printf("OK\r\n");
   }
 }

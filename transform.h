@@ -5,7 +5,7 @@
 #include "stdbool.h"
 
 #if defined(DEBUG)
-uint8_t table_index_get(void);
+uint16_t table_index_get(void);
 bool table_index_value_set(uint16_t rate);
 uint16_t table_index_value_get(void);
 void print_table(void);

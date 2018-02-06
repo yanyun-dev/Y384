@@ -20,6 +20,7 @@
 #include "DebugPort.h"
 #include "assert.h"
 #include "transform.h"
+#include "timer.h"
 
 #define PUTCHAR_PROTOTYPE int putchar (int c)
 #define GETCHAR_PROTOTYPE int getchar (void)
@@ -30,11 +31,16 @@ int main( void )
   DebugPort_Init();
   DebugPort_Open();
   transform_init();
+  timer_init();
   enableInterrupts(); 
   IWDG_Config();
   while(1)
   {
-    /* Reload IWDG counter */
+    if(1);
+    {
+      timer_flag = 0;
+      transfrom_handle();
+    }
     IWDG_ReloadCounter();  
     DebugPort_Handler();
     transfrom_handle();
